@@ -22,7 +22,7 @@
             }
 
             .project {
-              border-bottom: 1px solid #AAA;
+              padding-bottom: 2em;
               font-family: 'Varela Round', sans-serif;
               font-size: 15px;
               line-height: 135%;
@@ -32,15 +32,23 @@
               background-color: black;
               color: white;
               padding: 6px 0 6px 6px;
-              margin-left: -6px;
+              margin-left: -7px;
               margin-bottom: 1em;
             }
+            .project .link a {
+              font-family: Fenix, 'Times New Roman';
+              font-weight: bold;
+              font-size: 125%;
+            }
             .project .tagline p {
-              margin: 1em 0 1em -.5em;
+              margin: 1.5em 0 1em -.5em;
               background-color: #FED;
               padding: .5em;
               font-weight: bold;
               color: black;
+            }
+            .project img {
+              border: 1px solid #DDD;
             }
 
 
@@ -78,18 +86,26 @@
 
     <div class="container bodycontent">
       {% for project in page.projects %}
-      <div class="row project">
-        <h2>{{project.title}}</h2>
+      <div class="project">
+      <h2>{{project.title}}</h2>
+      <div class="row">
         <div class="col-xs-12 col-sm-6">
-          <p><a href="{{project.link}}">{{project.link}}</a></p>
-          <div class="tagline">{{project.tagline|markdownify}}</div>
+          {% if project.link %}<p class="link"><a href="{{project.link}}">{{project.link}}</a></p>{% endif %}
+          {% if project.tagline %}<div class="tagline">{{project.tagline|markdownify}}</div>{% endif %}
+          {% if project.team %}<div class="team">{{"Team: "|append:project.team|markdownify}}</div>{% endif %}
           {% for para in project.text %}
             {{para|markdownify}}
           {% endfor %}
         </div>
         <div class="col-xs-12 col-sm-6">
-          <a href="{{project.link}}"><img src="project-images/{{project.image}}" class="img-responsive"/></a>
+          {% if project.image %}
+            {% if project.link %}<a href="{{project.link}}">{% endif %}
+              <img src="project-images/{{project.image}}" class="img-responsive"/>
+            {% if project.link %}</a>{% endif %}
+          {% endif %}
+          {{ project.embed }}
         </div>
+      </div>
       </div>
       {% endfor %}
 
@@ -105,7 +121,7 @@
 
         <script src="static/js/main.js"></script>
 
-        <scriptx>
+        <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -113,6 +129,6 @@
 
         ga('create', 'UA-1190841-5', 'dc.opendataday.org');
         ga('send', 'pageview');
-        </scriptx>
+        </script>
     </body>
 </html>
