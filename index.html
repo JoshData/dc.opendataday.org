@@ -1,101 +1,139 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if lt IE 8]>         <html class="no-js lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js ie8"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Open Data Day Hackathon/Workshops in Washington, DC, USA</title>
-        <meta name="description" content="Open Data Day DC is a yearly hackathon+workshops in the District of Columbia, USA around open data.">
+        <title>Open Data Day DC: Hackathon+Workshops in Washington, DC, USA</title>
+        <meta name="og:title" content="Open Data Day" />
+        <meta name="description" content="A yearly hackathon and training event in the District of Columbia, USA around open data.">
+        <meta name="og:description" content="A yearly hackathon and training event in the District of Columbia, USA around open data.">
 
-        <meta name="viewport" content="width=device-width">
+        <meta property="og:image" content="https://dc.opendataday.org/static/img/logo.png" />
 
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="static/css/main.css">
-        <link rel="icon" type="image/ico" href="favicon.ico">
 
-        <script src="assets/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <link rel="icon" type="image/ico" href="favicon.ico">
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
-    <div class="navbar navbar-inverse navbar-fixed-top">
+
+    <!--[if lt IE 8]><p>Internet Explorer version 8 or any modern web browser is required to use this website, sorry.<![endif]-->
+    <!--[if gt IE 7]><!-->
+
+    <div class="navbar navbar-inverse" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#"><strong>#OpenDataDay #DC</strong></a>
+          <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>-->
+          <a class="navbar-brand" href="/">Open Data Day DC</a>
         </div>
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="https://opendatadaydc.hackpad.com">Hackpad</a></li>
-          </ul>
+          <div class="navbar-form navbar-right">
+          </div>
         </div><!--/.navbar-collapse -->
       </div>
     </div>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-lg-7">
-            <h1 style="margin-bottom: 25px">Open Data Day <strong>DC</strong></h1>
-
-            <p style="margin-bottom: 15px">A yearly hackathon in the District of Columbia and on the same day as <a href="http://opendataday.org/">open data hackathons around the world</a>.</p>
-
-            <p>Our last event was on February 22-23, 2014 at The World Bank.</p>
-
-            <p>We aim to strengthen the open data community and to make connections between people and between projects. There is no beer or pizza at our hackathon, no competitions, and no time pressure.</p>
-
-            <p class="text-center text-success" style="margin: 2em 0;">Check back later in the year for an announcement for the 2015 event.</p>
-
-            <p class="text-center"><a class="btn btn-primary btn-lg smooth" href="#archive">Read the 2014 Wrap-Up &raquo;</a></p>
-          </div>
-
-          <div class="col-md-4 col-lg-5">
-            <img src="photos/2014/wrapphoto.jpg" title="Photo from Open Data Day 2013" class="img-responsive img-rounded" style="border: 1px solid black" />
-          </div>
-        </div>
-      </div>
+    <div id="brand-bar" class="container-fluid">
+    	<div class="row">
+    		<img src="photos/2014/hacking.jpg" title="Hacking at Open Data Day DC 2014" class="img-responsive">
+    	</div>
+    	<div class="row">
+   			<h1>
+   				Open Data Day DC
+   				<div>Friday, Feb. 20 &ndash; Saturday, Feb. 21, 2015</div>
+   			</h1>
+    	</div>
+    	<div class="row">
+    		<img src="photos/2014/training.jpg" title="Workshops at Open Data Day DC 2014" class="img-responsive">
+    	</div>
     </div>
 
-    <div class="container bodycontent">
-      <h2>How It Works</h2>
+    <div class="container">
+		<p class="deck">Open Data Day DC is a yearly hackathon and training event in Washington, DC on the same day as more than 100 other Open Data Day events <a href="http://www.opendataday.org">throughout the world</a>. </p>
 
-      <div class="row">
-        <div class="col-sm-5">
-          <h3>Workshops</h3>
-          <p>In 2014 we ran four introductory workshops, each 1.5 hours, in parallel to the hacking:</p>
-          <ul>
-          	<li><strong>An Intro to Open Data</strong>, by co-organizer Eric Mill, is your starting point if you're new to open data. You'll learn what an API is, what JSON is, and how to use them in your work - without needing to write any code.</li>
-          	<li><strong>An Intro to Open Collaboration</strong>, lead by Leah Bannon, will show you how open data and open source are stronger when we're sharing and contributing to each other's work. You'll learn how to take advantage of tools like Github to publish your work to the Internet, and make other people's work better.</li>
-          	<li><strong>Open Mapping</strong>, by Max Richman, will teach you how to work with user-friendly mapping tools like Mapbox, QGIS, and Github.</li>
-          	<li>In <strong>An Introduction to Python</strong>, Shannon Turner will take your data skills to the next level by learning some honest-to-goodness coding skills. You'll learn the basics of working with Python, one of the most humane and user-friendly programming languages around.</li>
-          </ul>
-        </div>
-        <div class="col-sm-offset-1 col-sm-5">
-          <h3>Hacking</h3>
-          <p>We break up into groups, decide on projects, and then get working. You'll be deciding on the projects, so start thinking about problems you'd like to tackle. Come with your own project, or join someone else.</p>
-          <p>We typically have projects related to:</p>
-          <ul>
-          	<li>school choice in DC public schools</li>
-          	<li>municipal civic engagement / Code for DC projects</li>
-          	<li>public transit</li>
-          	<li>health &amp; environment</li>
-          	<li>government transparency</li>
-          	<li>international development</li>
-          </ul>
-          <p><b>Do I have to be a coder to attend? No!</b> Designers, writers, statisticians, subject matter experts, and anyone with a passion for open data can be a hacker. All four of our workshops have no coding experience required.</p>
-         </div>
-      </div>
+        <p class="text-center"><a class="btn btn-primary btn-lg" href="http://www.eventbrite.com/e/open-data-day-dc-2015-registration-14780648317"><strong>Register for 2015 &raquo;</strong></a></p>
+
+   		<p style="margin-top: 2em">Open Data Day DC 2015 will be on <strong>Friday, February 20, 2015</strong> (workshops only) and <strong>Saturday, February 21, 2015</strong> (hacking &amp; workshops) at The World Bank in Washington, DC.</p>
+
+		<p>It is free and open to the public. No prior experience with open data or hacking is needed. You MUST register to attend. Registration closes three days before the event due to requirements imposed by our venue.</p>
+	</div>
+
+	<div class="container">
+		<h2>Schedule</h2>
+		<div class="row">
+			<div class="col-sm-6">
+				<h3>Friday, February 20, 2015<br>9:30am to 5pm</h3>
+
+				<p>On Friday we have three workshops. Hacking will be on Saturday only.</p>
+
+				<p><strong>Registration</strong></p>
+
+				<p><strong>Introduction to Open Data</strong>
+				<br>Morning Workshop
+				<br>Lead by Eric Mill.</p>
+
+				<p><strong>I Have Data, Now What</strong>
+				<br>Afternoon Workshop #1
+				<br>This workshop will explore how to engage with the open data community from the perspective of governments and organizations. Workshop leaders will include Tom Lee (Mapbox), Traci Hughes (Director, DC Office of Open Government), and others TBD.</p>
+
+				<p><strong>Afternoon Workshop #2</strong>
+				<br>TBD</p>
+
+				<p>Additional details about the workshops will be posted here as we figure things out.</p>
+			</div>
+
+			<div class="col-sm-6">
+				<h3>Saturday, February 21, 2015<br>9:00am to 6pm</h3>
+
+				<p>On Saturday we have parallel tracks for hacking and workshops. You can go between the tracks freely.</p>
+
+				<p><strong>Registration / Opening Remarks / Project Pitches</strong></p>
+
+				<p><strong>Hacking (all day)</strong>
+				<br>Hacking is any creative problem solving. We break up into groups, decide on projects, and then get working. We typically have projects related to public schools, public transit, government transparency, corruption, and international development.</p>
+				<p>Do you have to be a coder to hack? No! Designers, writers, statisticians, subject matter experts, and anyone with a passion for open data can be a hacker.</p>
+
+				<p><strong>Introduction to Open Data</strong>
+				<br>Morning Workshop
+				<br>Lead by Eric Mill.</p>
+
+				<p><strong>Build With, Not For</strong>
+				<br>Afternoon Workshop #1
+				<br>Lead by Laurenellen McCann and Jessie Posilkin.</p>
+
+				<p><strong>Open Mapping</strong>
+				<br>Afternoon Workshop #2
+				<br>Lead by Max Richman.</p>
+
+				<p>Additional details about the workshops will be posted here as we figure things out.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<h2>About the event</h2>
+
+		<p>Our goals are to strengthen the open data community and to make connections between people and between projects. There is no beer or pizza at our hackathon, no competitions, and no time pressure. This will be the fourth Open Data Day DC event.</p>
+
+		<p>Open Data Day DC is committed to providing a safe and welcoming space, without regard to age, gender, race, sexual orientation, gender identity, disability, physical appearance, religion, level of technological knowledge, or any other attribute. For more, see our <a href="code-of-conduct.html">code of conduct</a>.</p>
+
+		<p>Open Data Day DC is organized by Joshua Tauberer (GovTrack.us), Eric Mill, Sam Lee (World Bank), Katherine Townsend, and Julia Bezgacheva (World Bank).</p>
+
+		<p>If you have any questions or comments about the event, contact Josh Tauberer at <a href="mailto:tauberer@govtrack.us?subject=Open Data Day DC question/comment">tauberer@govtrack.us</a>.</p>
+	</div>
+
+
+
       <!--
       <div class="row">
         <div class="col-sm-5">
@@ -121,6 +159,7 @@
 
       <p id="archive" style="text-align: center; margin: 2em; font-size: 16; font-weight: bold;">The Open Data Day DC Archives...</p>
 
+    <div class="container">
       <div class="row">
         <div class="col-md-4 col-lg-6">
           <h2>2014</h2>
@@ -180,45 +219,21 @@
        </div>
       </div>
 
-
-      <hr>
-
-      <footer>
-        <p>If you have any questions or comments about the event, contact Josh Tauberer at <a href="mailto:tauberer@govtrack.us?subject=OpenDataDay question">tauberer@govtrack.us</a>.</p>
-      </footer>
-
     </div> <!-- /container -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="assets/jquery-1.10.1.min.js"><\/script>')</script>
 
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-
-        <script src="static/js/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
         <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-1190841-5', 'dc.opendataday.org');
-        ga('send', 'pageview');
-        </script>
-
-        <script>
-          $(function() {
-            $('a.smooth').click(function(e) {
-              e.preventDefault();
-              var target = this.hash,
-              $target = $(target);
-              $('html, body').stop().animate({
-                'scrollTop': $target.offset().top - 15
-              }, 900, 'swing', function () {
-                window.location.hash = target;
-              });
-              return false;
-            });
-          })
+        var ga_account_id = 'UA-1190841-5';
+        if (ga_account_id != 'UA-XXXXX-X') {
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create',ga_account_id);ga('send','pageview');
+        }
         </script>
     </body>
 </html>

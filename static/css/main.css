@@ -1,3 +1,28 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700);
+
+.container-fluid {
+	max-width: 1200px; /* side of banner images */
+}
+
+body {
+	font-family: 'Noto Serif', serif;
+	font-size: 20px;
+	line-height: 140%;
+}
+
+a {
+	color: #33F;
+	border-bottom: 1px solid #33F;
+}
+	a:hover, a:active {
+		text-decoration: none;
+	}
+
+.navbar {
+	margin-bottom: 0
+}
+
 .bodycontent ul {
 	padding-left: 20px;
 }
@@ -5,6 +30,48 @@
 	margin-bottom: 1em;
 }
 
-h2 {
+#brand-bar h1 {
+	position: absolute;
+	width: 100%;
+	max-width: 1200px; /* side of banner images */
+	margin-top: -1.2em;
+	padding: 0 0 .1em 0;
+	font-size: 76px;
+	font-size: 9vw;
+	text-align: center;
+	color: white;
+	line-height: 1em;
+	background-color: #444;
+	background: rgba(30, 30, 30, 0.8);
+	font-family: 'Roboto Slab', sans-serif;
+}
+	#brand-bar h1 div {
+		margin-top: .75em;
+		font-size: 30%;
+		line-height: 1em;
+	}
+	@media screen and (max-width: 768px) {
+		#brand-bar h1 {
+			font-size: 36px;
+			font-size: 9vw;
+		}
+	}
+	@media screen and (min-width: 1200px) {
+		#brand-bar h1 {
+			font-size: 110px;
+		}
+	}
+
+p.deck {
+	margin: 2em 0 1em 0;
+	font-size: 30px;
+	line-height: 125%;
+}
+
+h2, h3 {
 	font-weight: bold;
+}
+
+blockquote {
+	line-height: 125%;
 }
