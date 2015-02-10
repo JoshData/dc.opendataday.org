@@ -68,9 +68,14 @@ p.deck {
 	line-height: 125%;
 }
 
-h2, h3 {
+h2, h3, h4 {
 	font-weight: bold;
 }
+h4 {
+	font-style: italic;
+}
+	h4:before { content: "-"; }
+	h4:after { content: "-"; }
 
 blockquote {
 	line-height: 125%;
