@@ -15,6 +15,10 @@ a {
 		text-decoration: none;
 	}
 
+li {
+	line-height: 125%;
+}
+
 .navbar {
 	margin-bottom: 0
 }
