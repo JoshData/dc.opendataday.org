@@ -21,6 +21,10 @@ li {
 	line-height: 125%;
 }
 
+img {
+	border: 1px solid black;
+}
+
 .navbar {
 	margin-bottom: 0
 }
@@ -98,7 +102,8 @@ font-style: italic;
 
 .by-the-numbers dt {
 font-style: normal;
-font-size: 33px;
+font-weight: normal;
+font-size: 175%;
 }
 
 ul.inline-list {
@@ -112,3 +117,11 @@ display: inline-block;
 .teamphotos p {
 margin-bottom: 2em;
 }
+
+.invert-panel {
+	color: #333;
+}
+	.invert-panel a {
+		color: black;
+		border-bottom: 1px solid black;
+	}
