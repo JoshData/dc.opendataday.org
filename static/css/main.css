@@ -29,43 +29,6 @@ img {
 	margin-bottom: 0
 }
 
-#brand-bar {
-	border-bottom: 2px solid black;
-}
-#brand-bar img {
-	width: 100%;
-}
-#brand-bar h1 {
-	position: absolute;
-	width: 100%;
-	margin-top: -1.2em;
-	padding: 0 0 .1em 0;
-	font-size: 76px;
-	font-size: 9vw;
-	text-align: center;
-	color: white;
-	line-height: 1em;
-	background-color: #444;
-	background: rgba(30, 30, 30, 0.8);
-	font-family: 'Roboto Slab', sans-serif;
-}
-	#brand-bar h1 div {
-		margin-top: .75em;
-		font-size: 30%;
-		line-height: 1em;
-	}
-	@media screen and (max-width: 768px) {
-		#brand-bar h1 {
-			font-size: 36px;
-			font-size: 9vw;
-		}
-	}
-	@media screen and (min-width: 1200px) {
-		#brand-bar h1 {
-			font-size: 110px;
-		}
-	}
-
 p.deck {
 	margin-bottom: 1em;
 	font-size: 30px;
@@ -125,3 +88,7 @@ margin-bottom: 2em;
 		color: black;
 		border-bottom: 1px solid black;
 	}
+
+.wide-image {
+	width: 100%;
+}
