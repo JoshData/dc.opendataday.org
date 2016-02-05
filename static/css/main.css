@@ -77,6 +77,12 @@ padding: 0 1.5em 0 0;
 display: inline-block;
 }
 
+@media screen and (max-width: 992px) {
+	#sponsors img {
+		margin-bottom: 1em;
+	}
+}
+
 .teamphotos p {
 margin-bottom: 2em;
 }
